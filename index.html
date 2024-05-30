@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+                      <meta charset="UTF-8" />
+                      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                      <!-- Bootstrap link -->
+                      <link
+                        rel="stylesheet"
+                        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+                      />
+                      <link
+                        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+                        rel="stylesheet"
+                        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+                        crossorigin="anonymous"
+                      />
+                          <link rel="stylesheet" href="style.css" />
+                          <!-- Icon for image  -->
+                          <link rel="icon" type="image/png" href="./assets/watch 2.jpg" />
+                          <title>Celestial watches</title>
+                      </head>
+     <body>
+                        <!-- Navigation area  -->
+                        <nav>
+                        <!-- sidebar for mobile -->
+                        <ul class="sidebar">
+                            <li onclick="hideSidebar()">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="26"
+                                viewBox="0 -960 960 960"
+                                width="26"
+                            >
+                                <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                                />
+                            </svg>
+                            </li>
+                            <li class="link"><a href="#home">Home</a></li>
+                            <li class="link"><a href="#products">Products</a></li>
+                            <li class="link"><a href="#contact">Contact-us</a></li>
+                        </ul>
+                        <ul>
+                            <li>
+                            <a href="#">Celestial Watches</a>
+                            </li>
+                            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                            <li class="hideOnMobile"><a href="programs.html">Programs</a></li>
+                            <li class="hideOnMobile"><a href="about.html">About-us</a></li>
+                            <li class="hideOnMobile"><a href="contact.html">Contact-us</a></li>
+                            <li class="menu-button" onclick="showSidebar()">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="26"
+                                viewBox="0 -960 960 960"
+                                width="26"
+                            >
+                                <path
+                                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                                />
+                            </svg>
+                            </li>
+                        </ul>
+                        <script>
+                            function showSidebar() {
+                            const sidebar = document.querySelector(".sidebar");
+                            sidebar.style.display = "flex";
+                            }
+
+                            function hideSidebar() {
+                            const sidebar = document.querySelector(".sidebar");
+                            sidebar.style.display = "none";
+                            }
+                        </script>
+                        </nav>
+    <!-- hero section -->
+                  <section class=" text-light p-5
+                  p-lg-0 pt-lg-5 text-center text-sm-start site-title ">
+                    <div class="site-background" >
+                  <div class="container">
+                  <div class="d-sm-flex align-items-center
+                  justify-content-between">
+                <div>
+                  
+                  <h1>Celestial<br><span class="
+                    text-light">watches
+                  </h1></span>
+                  <p class="lead my-4">
+                      We merge the art of watchmaking with the wonders of the cosmos.
+                      Each timepiece is a masterpiece, designed to capture the elegance and mystery. 
+                  </p>
+                  <button
+                  class="btn btn-dark 
+                  btn-lg text-white"
+                  data-bs-toggle="modal"
+                  data-bs-target="#"
+                  > Shop with us</button>
+                  </div>
+                  </div>
+                  </div>
+                    </div>      
+               </section>
+
+   <!-- Product section -->
+                  <section class="section__container price__container">
+                    <h2 class="section__header">Our Product Section</h2>
+                    <p class="section__subheader">
+                      Our pricing plan are as follows , each tailored to
+                      cater to different preferences.
+                    </p>
+                    <div class="price__grid">
+                      <div class="price__card">
+                        <div class="price__card__content">
+                          <h4>Minimalist Mesh</h4>
+                          <img src="./assets/watch 1.jpg" alt="icon1"/>
+                          <h3>15,000/ksh</h3>
+                          <p>For those who appreciate simplicity and elegance, 
+                            our Minimalist Mesh watch is the perfect choice.</p>
+                          
+                        </div>
+                        <button class="btn price__btn"><a href="#">Place Order </a></button>
+                      </div>
+                      <div class="price__card">
+                        <div class="price__card__content">
+                          <h4>Vintage Automatic</h4>
+                          <img src="./assets/watch 2.jpg" alt="icon2"/>
+                          <h3>70,000/kshs</h3>
+                          <p>Relive the golden age of watchmaking 
+                            with our Vintage Automatic watch. </p>
+                          
+                        </div>
+                        <button class="btn price__btn"><a href="#">Place Order </a></button>
+                      </div>
+                      <div class="price__card">
+                        <div class="price__card__content">
+                          <h4>Moodern Smartwatch</h4>
+                          <img src="./assets/watch3.jpg" alt="icon3"/>
+                          <h3>25,000/kshs</h3>
+                          <p>Stay connected and stylish with our Modern Smartwatch. Seamlessly blending cutting-edge
+                            technology with sleek design.</p>
+                          
+                        </div>
+                        <button class="btn price__btn"><a href="#">Place Order </a></button>
+                      </div>
+                    </div>
+                  </section>
+<!-- footer section -->
+        <footer class="section__container footer__container">
+              <p>&copy; 2024 James Ndungu. All rights reserved.</p> 
+        </footer>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"
+></script>
+
+  </body>
+</html>

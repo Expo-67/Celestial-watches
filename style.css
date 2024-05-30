@@ -1,0 +1,214 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    width: 90%;
+  }
+}
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+.section__header {
+  margin-bottom: 1rem;
+  font-size: 2.25rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--white);
+  transition: 5s;
+}
+
+.section__subheader {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  color: var(--text-light);
+  animation: fadeIn 8s;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: black;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 2.2s;
+}
+
+.btn:hover {
+  background-color: #ffb766;
+}
+
+img {
+  width: 100%;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg__blur {
+  position: absolute;
+  box-shadow: 0 0 1000px 50px #e59560;
+  z-index: -1;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--primary-color);
+}
+nav {
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f6f4e8;
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li {
+  height: 50px;
+}
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+.nav a:hover {
+  background-color: #e59560;
+}
+nav li:first-child {
+  margin-right: auto;
+}
+.nav__logo {
+  width: 30%;
+  height: 20%;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 480px;
+  z-index: 999;
+  background-color: rgba(237, 227, 227, 0.26);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.sidebar li {
+  width: 100%;
+}
+.sidebar a {
+  width: 100%;
+}
+.sidebar:hover {
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+/* Styling the hero section */
+.site-background {
+  background-image: url('./assets/ern-gan-3vSGyBo8_pU-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  color: var(--black-200);
+}
+.site-title {
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+/* Styling the product section */
+.price__grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.price__card {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffb766;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.price__card:hover {
+  background-color: #f43a09;
+  border-color: #ffb766;
+}
+
+.price__card__content {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.price__card h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.price__card h3 {
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+.price__btn {
+  background-color: #c2edda;
+}
+/* footer */
+
+.footer__container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 400px repeat(2, 1fr);
+  gap: 2.5rem;
+  align-items: center;
+}
+.
